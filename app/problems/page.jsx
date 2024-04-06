@@ -1,9 +1,15 @@
-import RenderFromTemplateContext from "next/dist/client/components/render-from-template-context"
+import ProblemList from "./ProblemList"
 
-export default function Tickets() {
+export default function Problems() {
     return (
         <main>
-            <h2>Problems</h2>
+            <nav>
+                <div>
+                   <h2>Problems</h2> 
+                   <p><small>Ongoing problems</small></p>
+                </div>
+            </nav>
+            <ProblemList />
         </main>
     )
 }
