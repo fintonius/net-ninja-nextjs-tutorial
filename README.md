@@ -5,6 +5,11 @@ Visit [Net Ninja Pro](https://netninja.dev) to view this course and many more.
 
 ## Getting Started with the Project
 
+## TO RUN THE JSON SERVER FIRST INSTALL:
+sudo npm install json-server -g
+## THEN RUN
+json-server --watch --port 4000 ./_data/db.json
+
 First, run the development server:
 
 ```bash
