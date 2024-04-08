@@ -1,6 +1,10 @@
 import Link from 'next/link';
+import { resolve } from 'styled-jsx/css';
 
 async function getTickets() {
+    //imitate delay:
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
     const res = await fetch('http://localhost:4000/tickets', {
         next: {
             /* using 0 opts out of Next caching the data from the initial fetch request
