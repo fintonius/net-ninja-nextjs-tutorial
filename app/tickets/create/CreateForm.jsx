@@ -22,7 +22,7 @@ export default function CreateForm() {
     const [priority, setPriority] = useState('low');
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
 
@@ -39,6 +39,7 @@ export default function CreateForm() {
         })
 
         if (res.status === 201) {
+            router.refresh()
             router.push('/tickets')
         }
     }
