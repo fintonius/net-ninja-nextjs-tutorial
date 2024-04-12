@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Dogo from './fune.png'
+import Link from "next/link"
+import Image from "next/image"
+import Dogo from "./fune.png"
 
 export default function Navbar() {
     return (
@@ -12,7 +12,7 @@ export default function Navbar() {
           quality={100}
           placeholder='blur'
         />
-        <h1>Fintan's Many Problems</h1>
+        <h1>{`Fintan's Many Problems`}</h1>
         <Link href="/">Dashboard </Link>
         <Link href="/tickets">Problems</Link>
       </nav>
